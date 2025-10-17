@@ -31,7 +31,7 @@ print('Curso', 'de', 'python', end='.') # finaliza a string com um deteminado ca
 print()
 print('Curso \t de \t python') # separação por tabulador
 
-arquivo = open(' Aula  04 - saida.txt', 'a+')
+arquivo = open('Aula  04 - saida.txt', 'a+')
 
 print('curso', 'de', 'python', file=arquivo)
 arquivo.close()
