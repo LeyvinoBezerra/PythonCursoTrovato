@@ -33,3 +33,14 @@ print('Prioridade:', vlA * (vlB * vlC))
 print('x' * 20)
 
 # Operadores Incrementais
+print()
+
+valor_A = 10
+print('Valor A:', valor_A)
+
+valor_A += 10 # valor_A = valor_A * 10
+print('Valor A:', valor_A)
+
+valor_A *= 10
+print('valor_A:', valor_A)
+
