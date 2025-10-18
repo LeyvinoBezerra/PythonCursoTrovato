@@ -1,5 +1,5 @@
-# Método é um procedimento que pode manipular atributos de objetos para qual
-# o método foi chamado.
+# Metodo é um procedimento que pode manipular atributos de objetos para qual
+# para qual o metodo foi chamado
 
 print(type('texto'))
 print('texto de exemplo'.capitalize())
