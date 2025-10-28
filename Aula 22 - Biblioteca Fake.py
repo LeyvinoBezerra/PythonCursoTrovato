@@ -49,6 +49,8 @@ funcao = []
 endereco = []
 email = []
 data_nascimento = []
+cpf = []
+idade = []
 
 for i in range(0, 20):
     nome.append(fake.name())
@@ -59,7 +61,8 @@ for i in range(0, 20):
     endereco.append(fake.street_address())
     email.append(fake.email())
     data_nascimento.append(fake.date_of_birth())
-
+    cpf.append(fake.cpf())
+    idade.append(fake.random_number(digits=2))
 print(empresa)    # Gerar Range
 
 # Gerar um DataFrame
@@ -73,7 +76,9 @@ df = pd.DataFrame(
         "CARGO": funcao,
         "ENDEREÇO": endereco,
         "EMAIL": email,
-        "DATA DE NASCIMENTO": data_nascimento
+        "DATA DE NASCIMENTO": data_nascimento,
+        "CPF": cpf,
+        "IDADE": idade
     }
 )
 
@@ -81,7 +86,7 @@ print(df)
 
 # Gravar em um arquivo CSV
 
-df.to_csv('DADOS_FAKES.csv')
+df.to_csv('DADOS_FAKES.csv', index=False)
 
 
 
